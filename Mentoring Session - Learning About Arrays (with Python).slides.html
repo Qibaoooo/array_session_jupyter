@@ -14675,7 +14675,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Our misson today is to cover:</p>
 <ul>
-<li>What is an array</li>
+<li>What is an array &amp; why we need it</li>
 <li>How might you use an array</li>
 <li>How to write to and read from an array</li>
 <li>Helpful methods that can be used with arrays</li>
@@ -14732,8 +14732,9 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Why is a structured collection of elements needed? <br>
-Why don't we just create a reference for every variable?</p>
+<p>Why is a structured collection of elements needed? <br></p>
+<p>Why don't we just create a reference for every variable? <br></p>
+<p>With or without array - is there a difference?</p>
 
 </div>
 </div>
@@ -14848,7 +14849,7 @@ Sum of all salaries is 25500
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<blockquote><p>🙈 <br> Imagine when there are 5000 employees instead of just 5?</p>
+<blockquote><p>Imagine when there are 5000 employees instead of just 5?</p>
 </blockquote>
 
 </div>
@@ -14861,7 +14862,7 @@ Sum of all salaries is 25500
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<blockquote><p>✨ <br>  We can use an array to group the data. Then we are able to process them with higher efficiency.</p>
+<blockquote><p>We can use an array to group the data. Then we are able to process them with higher efficiency.</p>
 </blockquote>
 
 </div>
@@ -14891,7 +14892,7 @@ Sum of all salaries is 25500
 <span class="n">salaries</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">6000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">5500</span><span class="p">,</span> <span class="mi">4000</span><span class="p">]</span>
 
 <span class="c1"># a loop to print each entry</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">salary</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">salaries</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">salary</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">salaries</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Salary of Employee</span><span class="si">{</span> <span class="n">i</span> <span class="si">}</span><span class="s1"> is </span><span class="si">{</span> <span class="n">salary</span> <span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="c1"># make use of python&#39;s sum()</span>
@@ -14938,7 +14939,7 @@ Sum of all salaries is 25500
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<blockquote><p>😍 <br> Only 4 lines of code to achieve the same result, no matter how many employees join later!</p>
+<blockquote><p>Only 4 lines of code to achieve the same result, no matter how many employees join later!</p>
 </blockquote>
 
 </div>
@@ -15302,51 +15303,6 @@ Sorts objects of list, use compare func if given
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list.index()</span>
-
-<span class="n">odd_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">odd_numbers</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-
-<span class="c1"># print(odd_numbers.index(99)) # ValueError</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
@@ -15583,7 +15539,7 @@ company_three = [6500, 7000, 4000, 5200, 5700, 5700, 8300]<br></p>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15597,11 +15553,43 @@ company_three = [6500, 7000, 4000, 5200, 5700, 5700, 8300]<br></p>
 <span class="n">company_three</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6500</span><span class="p">,</span> <span class="mi">7000</span><span class="p">,</span> <span class="mi">4000</span><span class="p">,</span> <span class="mi">5200</span><span class="p">,</span> <span class="mi">5700</span><span class="p">,</span> <span class="mi">5700</span><span class="p">,</span> <span class="mi">8300</span><span class="p">]</span>
 
 <span class="c1"># your solution here:</span>
+<span class="n">company_two</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="n">company_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">company_one</span><span class="o">+</span><span class="n">company_two</span><span class="o">+</span><span class="n">company_three</span><span class="p">)</span>
+
+<span class="n">number_total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">company_one</span><span class="o">+</span><span class="n">company_two</span><span class="o">+</span><span class="n">company_three</span><span class="p">)</span>
+
+<span class="n">average_salary</span> <span class="o">=</span> <span class="n">company_sum</span><span class="o">/</span><span class="n">number_total</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">average_salary</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>6075
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div></section></section><section><section>
@@ -15636,7 +15624,7 @@ company_three = [6500, 7000, 4000, 5200, 5700, 5700, 8300]<br></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Some-other-stuff-we-can-do-with-python-list:">Some other stuff we can do with python <code>list</code>:<a class="anchor-link" href="#Some-other-stuff-we-can-do-with-python-list:">&#182;</a></h3>
+<h3 id="Some-other-stuff-we-can-do-with-list:">Some other stuff we can do with <code>list</code>:<a class="anchor-link" href="#Some-other-stuff-we-can-do-with-list:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15645,15 +15633,16 @@ company_three = [6500, 7000, 4000, 5200, 5700, 5700, 8300]<br></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2-D list</span>
 
-<span class="n">two_d_array</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">two_d_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">two_d_array</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>    
-<span class="nb">print</span><span class="p">(</span><span class="n">two_d_array</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_d_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">two_d_list</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -15736,22 +15725,6 @@ company_three = [6500, 7000, 4000, 5200, 5700, 5700, 8300]<br></p>
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div></section></section>
